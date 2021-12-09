@@ -2,6 +2,6 @@ name: My-workflow
 on: push
 jobs:
   my-job:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
