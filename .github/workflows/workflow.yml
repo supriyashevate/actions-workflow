@@ -10,7 +10,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: |
-        docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-        echo "Log level: ${{ github.event.inputs.logLevel }}"
-        echo "Tags: ${{ github.event.inputs.tags }}"
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+     
